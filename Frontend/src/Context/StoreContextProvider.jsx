@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 export const StoreContext = createContext(null);
 
 function StoreContextProvider({ children }) {
-  const url = "http://localhost:5000";
+  const url = "https://arvaj-tmato.onrender.com";
 
   const [cartItems, setCartItems] = useState({});
 

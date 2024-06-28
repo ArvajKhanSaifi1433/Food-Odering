@@ -17,7 +17,7 @@ function Navbar({ setShowLogin }) {
   const logout = async () => {
     try {
       const data = await axios.post(
-        `http://localhost:5000/api/v1/users/logout`,
+        `https://arvaj-tmato.onrender.com/api/v1/users/logout`,
         {},
         {
           headers: {
