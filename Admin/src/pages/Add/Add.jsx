@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 function Add() {
-  const url = "http://localhost:5000";
+  const url = "https://arvaj-tmato.onrender.com";
   const [image, setImage] = useState(false);
 
   const [data, setData] = useState({
