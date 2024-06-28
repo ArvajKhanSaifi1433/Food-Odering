@@ -1,0 +1,68 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("./public/header_img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  border-radius: 15px;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  /* the max() function will choose the larger value between 4.5vw and 22px */
+}
+
+.header-contents p {
+  color: white;
+  font-size: 1.1vw;
+}
+
+.header-contents button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 38vw;
+    background-size: cover;
+  }
+  .header-contents {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 780px) {
+  .header-contents {
+    max-width: 75%;
+
+  }
+  .header-contents p {
+    display: none;
+  }
+
+  .header-contents button {
+    padding: 1.7vw 3.5vw;
+  }
+}
